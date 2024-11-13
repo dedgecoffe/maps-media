@@ -10,3 +10,53 @@
 .social-icons a i {
     margin-right: 8px;
 }
+
+/* Atur responsivitas elemen peta (iframe Google Maps) */
+iframe {
+    width: 100%; /* Lebar 100% dari elemen induk untuk responsivitas */
+    max-width: 600px; /* Batas maksimum untuk lebar iframe */
+    height: 300px; /* Tinggi default untuk layar kecil */
+    border: 0;
+}
+
+/* Atur ukuran lebih besar pada layar yang lebih lebar */
+@media (min-width: 768px) {
+    iframe {
+        height: 450px;
+    }
+}
+
+/* Gaya ikon media sosial */
+.social-icons {
+    display: flex;
+    flex-wrap: wrap; /* Mengatur ikon agar bisa turun ke baris berikutnya pada layar kecil */
+    gap: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a i {
+    margin-right: 8px;
+}
+
+/* Ubah warna saat hover */
+.social-icons a:hover {
+    background-color: #e0e0e0;
+}
+
+/* Atur ukuran teks dan ikon media sosial pada layar lebih kecil */
+@media (max-width: 600px) {
+    .social-icons a {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
