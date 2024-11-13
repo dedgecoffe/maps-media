@@ -1,2 +1,2 @@
-# maps-sosial-media
+# maps-media
 fauzi
